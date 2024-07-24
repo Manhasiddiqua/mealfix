@@ -7,24 +7,22 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="./styles.css">
-<link rel="icon" href="./img/icon.png">
+<link rel="icon" href="./img/icon.jpeg">
 <style>
 .w3-sidebar a {font-family: "Roboto", sans-serif}
 body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 </style>
 <body class="w3-content" style="max-width:1200px">
-  
+
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
   <div class="w3-container w3-display-container w3-padding-16">
     <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
     <h3 class="w3-wide"><b>MEALFIX</b></h3>
   </div>
-
   <div class="w3-padding-64 w3-large" style="font-weight:bold">
     
-    <a href="index.html" class="w3-bar-item w3-button w3-padding w3-light-grey">Home</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding">Home</a>
     
     <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
       Grocery <i class="fa fa-caret-down"></i>
@@ -45,7 +43,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
       <a href="#" class="w3-bar-item w3-button">Tim Horton's</a>
     </div>
    
-  <a href="AboutUs.html" class="w3-bar-item w3-button w3-padding">About Us</a>
+  <a href="AboutUs.html" class="w3-bar-item w3-button w3-padding w3-light-grey">About Us</a>
   <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a> 
   <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
 </nav>
@@ -61,119 +59,25 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:250px">
-
-  <!-- Push down content on small screens -->
-  <div class="w3-hide-large" style="margin-top:83px"></div>
-  
-  <!-- Top header -->
+  <div class="w3-main" style="margin-left:250px">
+<br><br><br>
   <header class="w3-container w3-xlarge">
-    <p class="w3-left">Home</p>
+    <p class="w3-left">About Us</p>
     <p class="w3-right">
       <i class="fa fa-shopping-cart w3-margin-right"></i>
-      <i class="fa fa-search"></i>
-      <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search...">
-     
+      <i class="fa fa-search"></i> <input type="text" placeholder="Search..">
+    </p>
     </p>
   </header>
 
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
 
-  <div class="w3-container w3-text-grey" id="jeans">
-    <p>8 items</p>
-  </div>
+  <img src =" /img/mealfix.png" style="width:100%" style="height:25%"/>
+  <h6> MEALFIX is a dedicated platform that is combatting and decreasing food wastage. We strive to provide our consumers with the best and most recent deals. We create a space for the availability of short dated products to be sold at discounted prices, allowing consumers to strike a great deal, and establishments to limit waste. </h6> 
 
-  <!-- Product grid -->
-  <div class="w3-row" >
-    <div class="w3-col l3 s6" >
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/lays.jpeg" style="width:100%">
-          <div class="w3-display-middle w3-display-hover">
-                  <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p style="margin-block-end:40px">Walmart - Lay's Chips<br><b><s>$2.99</s> </b><b>  $0.99 <color=red;></b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/Redlobster.jpeg" style="width:100%">
-          <div class="w3-display-middle w3-display-hover">
-                  <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Red Lobster - Double Lobster Tail <br> <b><s>$19.99</s></b><b> $16.99</b></p>
-      </div>
-    </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/gyubee.jpeg" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Special</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-       <p  style="margin-block-end:16px">Liuyishou -Hot Pot Family Buffet <br> <b><s>$19.99</s></b><b> $17.56 </b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/Kibosushi.jpeg" style="width:100%">
-          <div class="w3-display-middle w3-display-hover">
-              <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p> The Sushi Bar - Family Sushi Buffet <br> <b><s>$19.99</s></b> <b>  $16.99 </b></p>
-      </div>
-    </div>
 
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/chipotle.jpeg" style="width:100%">
-          <div class="w3-display-middle w3-display-hover">
-              <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p style="margin-block-end:40px">Chipotle - Bowl<br><b><s>$20.50</s></b><b> $17.00</b><br></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/brocc.png" style="width:100%">
-          <span class="w3-tag w3-display-topleft">Only Today!</span>
-          <div class="w3-display-middle w3-display-hover">
-            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p>Sobey's - Broccoli<br><b><s>$3.99</s></b><b> $1.99 / lb</b></p>
-      </div>
-    </div>
-
-    <div class="w3-col l3 s6">
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/houseofgourmet.jpeg" style="width:100%">
-          <div class="w3-display-middle w3-display-hover">
-                <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p style="margin-block-end:16px">House of Gourmet - Chicken Noodle Soup<br><b><s>$14.99</s></b><b> $11.99</b></p>
-      </div>
-      <div class="w3-container">
-        <div class="w3-display-container">
-          <img src="/img/napoli.jpeg" style="width:100%">
-          <div class="w3-display-middle w3-display-hover">
-                  <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
-          </div>
-        </div>
-        <p> Cafe Oro Di Napoli - Margherita Pizza <br><b><s>$24.99</s></b> <b>$20.50</b></p>
-      </div>
-    </div>
-  </div>
-
-  
-
- 
   
   <!-- Footer -->
   <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
@@ -222,7 +126,7 @@ body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
     </div>
   </footer>
 
-  <div class="w3-black w3-center w3-padding-24">COPYRIGHT MEALFIX 2022<a  target="_blank" class="w3-hover-opacity"a></div>
+  <div class="w3-black w3-center w3-padding-24">COPYRIGHT MEALFIX 2022 <a title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></div>
 
   <!-- End page content -->
 </div>
@@ -260,6 +164,7 @@ function resturantOnclickSection() {
     x.className = x.className.replace(" w3-show", "");
   }
 }
+
 
 // Open and close sidebar
 function w3_open() {
